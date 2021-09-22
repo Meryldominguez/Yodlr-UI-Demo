@@ -1,0 +1,43 @@
+<nav id="sidebar" class="active">
+    <div class="sidebar-header">
+        <a href="/">
+            <h3>Yodlr</h3>
+            <strong>Y</strong>    
+        </a>
+        
+        <button type="button" id="sidebarCollapse" class="btn">
+            <i class="fas fa-bars text-light"></i>
+        </button>
+    </div>
+    <ul class="list-unstyled components">
+        <li>
+            <a href="/register">
+                <i class="fas fa-briefcase"></i>
+                <span class="navcomp">Registration</span>
+            </a>
+            <hr>
+        {% if admin %}
+        <li>
+            <a href="#">
+                <i class="fas fa-users"></i>
+                <span class="navcomp">User List</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="fas fa-sign-out-alt"></i>
+                <span class="navcomp">Sign out</span>
+                
+            </a>
+        </li>
+        {% else %}
+        <li>
+            <a href="#">
+                <i class="fas fa-tools"></i>
+                <span class="navcomp">Sign in as Admin</span>
+            </a>
+        </li>
+        {% endif %}
+    </ul>
+
+</nav>

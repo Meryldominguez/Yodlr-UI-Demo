@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1>Yodlr Registration Portal</h1>
+  <form>
+    <div class="row form-group">
+      <div class="col-sm-6">
+        <label for="FirstNameInput">First Name</label>
+        <input type="text" class="form-control" id="FirstNameInput" placeholder="First">
+      </div>
+      <div class="col-sm-6">
+        <label for="LastNameInput">Last Name</label>
+        <input type="text" class="form-control" id="LastNameInput" placeholder="Last">
+      </div>
+    </div>
+    <div class="row form-group">
+      <div class="col">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+      </div>
+    </div>
+    <div class="form-group text-center">
+      <button type="submit" class="btn btn-primary col-8">Register</button>
+    </div>
+  </form>
+  
+{% endblock%}
