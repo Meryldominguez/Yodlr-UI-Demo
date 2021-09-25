@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Yodlr User List</h1>
+<div class="card col-sm-8 ">
+    <ul class="list-group list-group-flush">
+      {% for user in userList %}
+        <li class="list-group-item d-flex align-items-start">
+            <a href="/admin/{{ user.id }}" class="ml-auto">
+                <i class="fa-solid fa-user fa-3x"></i>
+            </a>
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">{{user.lastName}}, {{user.firstName}}</div>
+                <div class="mx-3">{{user.email}}</div>
+            </div>
+            {% if "active" in user.state %}
+                <span class="badge bg-success rounded-pill">{{user.state}}</span>
+            {% else %}
+                <span class="badge bg-warning rounded-pill">{{user.state}}</span>
+            {% endif %}
+        </li>
+    {% endfor %}
+    </ul>
+
+  </div>
+
+{% endblock%}
+
+{% block scripts %}
+
+
+{% endblock%}

@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Yodlr User <span class="text-info">{{user.lastName}}, {{user.firstName}}</span></h1>
+<div class="my-3">
+    <a href="/admin" class="link d-flex align-content-center" >
+        <i class="fas fa-arrow-left fa-2x"></i> 
+        <span class="m-2 h6 align-middle">Back to List</span>
+    </a>
+</div>
+<div class="card col-8">
+    <div class="card-header d-flex justify-content-between align-items-start">
+        <div class="fw-bold">{{user.lastName}}, {{user.firstName}}</div>
+        {% if "active" in user.state %}
+            <span class="badge bg-success rounded-pill">{{user.state}}</span>
+        {% else %}
+            <span class="badge bg-warning rounded-pill">{{user.state}}</span>
+        {% endif %}
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="mx-3 list-group-item">{{user.email}}</div>
+    </ul>
+
+  </div>
+
+{% endblock%}
+
+{% block scripts %}
+
+
+{% endblock%}

@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon -e .html index.js"
+    "start": "nodemon -e html,js,css index.js"
   },
   "dependencies": {
+    "axios": "^0.21.4",
     "body-parser": "~1.8.1",
     "cookie-parser": "~1.3.3",
     "cors": "^2.8.4",

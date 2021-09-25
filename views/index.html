@@ -1,10 +1,37 @@
 {% extends "base.html" %}
 
 {% block content %}
-  <h1>Yodlr Design Challenge</h1>
-  <div>
-    Please submit your information on the <a class="link" href="/register.html">Registration Page</a> if you havent done so.<br/>
+  <h1>Yodlr</h1>
+  <div class="my-5">
+    Please submit your information on the <a class="link link-info" href="/register">Registration Page</a> if you havent done so.<br/>
   </div>
-  
+  <div class="my-5">
+    To view registered users please visit the <a class="link link-info" href="/admin">Admin Page.</a><br/>
+  </div>
+
+  <div class="card m-5" >
+    <div class="card-header">
+      <h5 class="card-title">Meryl's Yodlr Design Challenge</h5>
+      <h6 class="card-subtitle my-2 text-muted">What I did, What I would continue to do</h6>
+    </div>
+    <div class="card-body">
+        <p class="card-text text-dark">
+          Hello, and thanks for checking out this project. <br> 
+          I made this using Jquery, continued the Express backend for frontend routing, Nunjucks for HTML templating, and Bootstrap for the components and styling. 
+          This project was a wonderful way to practice frontend without using React and getting into the nitty-gritty of DOM manipulation and HTML templates again.
+          <br><br>
+          If this were a full time project with the same stack my next steps would be:
+          <ul class="list-group">
+            <li class="list-group-item">Auth for Admin users</li>
+            <li class="list-group-item">Editing User data for Admin users </li>
+            <li class="list-group-item">Searching/Sorting Users for admin</li>
+          </ul>
+        </p>
+          
+        
+      <a href="https://www.proprly.app" class="link card-link link-info">Proprly: Proof I can use React</a>
+      
+    </div>
+  </div>
     
 {% endblock %}
